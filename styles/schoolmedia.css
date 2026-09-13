@@ -1,0 +1,101 @@
+@media screen and (max-width: 768px){
+
+.photo {
+    flex-direction: column;
+    align-items: center;
+}
+
+.about {
+    width: 90%;
+}
+
+.aboutme {
+    padding: 15px;
+}
+
+.semestercourse {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footing {
+    flex-wrap: wrap;
+}
+}
+
+@media screen and (max-width: 480px) {
+    .logoname {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.logoname img {
+    width: 150px;
+}
+
+.logoname span {
+    font-size: 1.5rem;
+}
+
+.menu-button {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: greenyellow;
+    font-size: 30px;
+    text-align: right;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.navig {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navig.open {
+    display: flex;
+}
+
+.navig a {
+    width: 100%;
+    text-align: center;
+}
+
+.photo {
+    padding: 10px;
+}
+
+.about {
+    width: 100%;
+}
+
+.imageko {
+    width: 180px;
+    height: auto;
+}
+
+.coursestitle {
+    grid-template-columns: 1fr;
+    padding: 10px;
+}
+
+.semestercourse {
+    grid-template-columns: 1fr;
+    padding: 10px;
+}
+
+.course-card {
+    width: 100%;
+}
+
+.footing {
+    display: flex;
+    
+}
+
+.socials {
+    justify-content: center;
+}
+}

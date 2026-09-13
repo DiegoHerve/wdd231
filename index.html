@@ -3,9 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TESTING WORK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/school.css">
+    <link rel="stylesheet" href="styles/schoolmedia.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
-    <p>Let's get started now</p>
+    <header>
+    <div class="logoname">
+        <picture>
+            <img src="images/Brigham_Young_University–Idaho_logo.svg" alt="BYU Idaho Logo">
+        </picture>
+        <span>BYU - PATHWAY</span>
+    </div>
+
+    <button id="menuButton" class="menu-button" aria-label="Open navigation" aria-expanded="false">
+        ☰
+    </button>
+
+    <nav id="navigation" class="navig">
+        <a class="active" href="index.html">Home</a>
+        <a href="#">Chamber</a>
+        <a href="#">Final</a>
+    </nav>
+</header>
+
+<main>
+
+    <h1 class="homing">Home</h1>
+
+    <div class="photo">
+
+        <section class="about">
+            <h2 class="aboutme">About Me</h2>
+
+            <p>My name is Jean Herve. I am married and have two kids. One girl and one boy. I am a programmer and developer.</p>
+            <p>I like creating and this is one of the reasons why I choose to be a web developer. I also have some project that I would like to develop and to be implemented in our daily life. I always like to work with experienced people that can help me to develop my skills as fast as possible.</p>
+            <p>Currently I am studying at Brigham Young University, in the domain of Web development and programming. Really enjoy all of the experiences with different people from different part of the world for each semester.</p>
+        </section>
+
+        <section class="about">
+            <h2 id="fotoka">Students Photo</h2>
+            <img src="images/jean_herve.jpg" alt="Photo of Jean Herve" class="imageko">
+        </section>
+
+    </div>
+
+    <section class="certificate">
+        <h2 class="certify">Web Certificate Courses</h2>
+
+        <div class="coursestitle">
+            <button type="button" id="allCourses">All Courses</button>
+            <button type="button" id="wddCourses">WDD Courses</button>
+            <button type="button" id="cseCourses">CSE Courses</button>
+        </div>
+
+        <p class="credit-total">
+            The total number of credits listed below is <span id="creditTotal">0</span>
+        </p>
+
+        <div id="courseContainer" class="semestercourse"></div>
+    </section>
+
+</main>
+
+<footer>
+
+    <section class="footing">
+
+        <div class="socials">
+            <nav>
+                <a href="https://github.com/DiegoHerve/wdd231">
+                    <img src="images/github-142-svgrepo-com.svg" alt="GitHub logo">
+                </a>
+            </nav>
+
+            <nav>
+                <a href="https://www.linkedin.com/">
+                    <img src="images/linkedin-with-circle-svgrepo-com.svg" alt="LinkedIn logo">
+                </a>
+            </nav>
+
+            <nav>
+                <a href="https://www.facebook.com/">
+                    <img src="images/facebook-svgrepo-com.svg" alt="Facebook logo">
+                </a>
+            </nav>
+        </div>
+
+        <div>
+            <p>&copy; <span id="currentYear"></span> ✨Jean Herve✨ Madagascar</p>
+        </div>
+
+        <div>
+            <p id="lastModified">Last Modified: </p>
+        </div>
+
+    </section>
+
+</footer>
+    
 </body>
 </html>
