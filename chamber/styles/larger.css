@@ -1,0 +1,133 @@
+@media screen and (min-width: 700px) {
+
+    .header-top {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    #navigation {
+        display: block;
+        background-color: transparent;
+    }
+
+    #navigation ul {
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 0 2rem 1rem;
+        gap: 0.5rem;
+    }
+
+    #navigation a {
+        border: none;
+        padding: 0.7rem 1rem;
+        border-radius: 4px;
+    }
+
+
+    main {
+        padding: 2rem;
+    }
+
+    main h1 {
+        font-size: 2.4rem;
+        margin-bottom: 1.5rem;
+    }
+
+
+    .view-buttons {
+        margin-bottom: 2rem;
+    }
+
+   
+
+    .members-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 2fr 1fr 2fr;
+        align-items: start;
+        gap: 2rem;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .development-info {
+        border-top: none;
+        border-left: 1px solid rgba(255, 255, 255, 0.25);
+        padding-top: 0;
+        padding-left: 2rem;
+        text-align: left;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    .header-top {
+        padding: 1.25rem 2rem;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+    }
+
+    .header-top {
+        width: auto;
+        margin: 0;
+    }
+
+    #navigation {
+        justify-self: end;
+        padding-right: 2rem;
+    }
+
+    #navigation ul {
+        padding: 0;
+    }
+
+    .members-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    
+    .member-card {
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .member-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+        transition: 0.2s ease;
+    }
+}
+
+/* this is for extra large desktop screen */
+
+@media screen and (min-width: 1200px) {
+
+    .members-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    main {
+        padding-top: 2.5rem;
+        padding-bottom: 3rem;
+    }
+}

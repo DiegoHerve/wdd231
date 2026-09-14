@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of commerce directory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="author" content="Jean Herve">
+
+    <meta name="description" content="This is the web page directory of the chamber of commerce that will help you know more about it.">
+
+    <meta property="og:title" content="chamber's directory">
+    <meta property="og:description" content="This is the web page directory of the chamber of commerce that will help you know more about it.">
+    <meta property="og:image" content="https://yourdomain.com/images/social-share.jpg">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/chamber.js" defer></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-top">
+            <a class="logo-link" href="index.html">
+                <img src="images/chamber-logo" alt="Madagascar Chamber of Commerce logo">
+                <div class="site-title">
+                    <span>Madagascar</span>
+                    <span>Chamber of Commerce</span>
+                </div>
+            </a>
+
+            <button id="menu-button" aria-label="Open navigation menu">
+                ☰
+            </button>
+         </div>
+
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Business Directory</h1>
+
+        <div class="view-buttons">
+            <button id="grid-button" class="view-active" aria-label="Display businesses in grid view">
+                ▦
+            </button>
+
+            <button id="list-button" aria-label="Display businesses in list view">
+                ☰
+            </button>
+        </div>
+        <section id="members" class="members-grid">
+            <!-- Member cards are generated with JavaScript -->
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+
+            <div class="footer-contact">
+                <h2>Madagascar Chamber of Commerce</h2>
+                <p>23 rue, RABESAHALA Analakely</p>
+                <p>Antananarivo - Madagascar</p>
+                <p>Email: info@mada-chamber.org</p>
+                <p>Phone: +261 56 25 512</p>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com">
+                    <img src="images/facebook.svg" alt="facebook logo">
+                </a>
+                <a href="https://www.linkedin.com/" >
+                    <img src="images/linkedin.svg" alt="linkedin logo">
+                </a>
+                <a href="https://github.com/DiegoHerve/wdd231">
+                    <img src="images/github.svg" alt="github logo">
+                </a>
+            </div>
+
+            <div class="development-info">
+                <p>&copy; <span id="current-year"></span> Madagascar Chamber of Commerce</p>
+                <p>Jean Herve | WDD 231</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+</html>
