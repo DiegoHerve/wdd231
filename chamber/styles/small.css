@@ -6,9 +6,8 @@
     --white: #ffffff;
     --text-color: #4c1414;
     --border-color: #d9d9d9;
-
-    --heading-font: Arial, Helvetica, sans-serif;
-    --body-font: Arial, Helvetica, sans-serif;
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Open Sans", sans-serif;
 }
 
 
