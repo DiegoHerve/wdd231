@@ -53,7 +53,7 @@
 #navigation a:hover,
 #navigation a.active {
     background-color: var(--secondary-color);
-    color: red;
+    color: navy;
 }
 
 .no-bullets{
@@ -194,6 +194,7 @@ footer {
     background-color: var(--primary-color);
     color: var(--white);
     padding: 2rem 1rem;
+    align-items: center;
 }
 
 .footer-content {

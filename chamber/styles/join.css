@@ -1,0 +1,166 @@
+/* Join page */
+
+.join-layout {
+    display: grid;
+    gap: 2rem;
+}
+
+.form-section,
+.levels-section {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.form-section h2,
+.levels-section h2 {
+    color: var(--primary-color);
+}
+
+form {
+    margin-top: 1rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+form input,
+form select,
+form textarea {
+    display: block;
+    width: 100%;
+    margin-top: 0.4rem;
+    padding: 0.7rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font: inherit;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #055305;
+}
+
+.level-cards {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.level-card {
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    animation: showCard 1s ease forwards;
+    opacity: 0;
+}
+
+.level-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.level-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.level-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.level-card:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+@keyframes showCard {
+    from {
+        opacity: 0;
+        margin-left: 30px;
+    }
+    to {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+.level-card h3 {
+    color: var(--primary-color);
+}
+
+.level-card a {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 1.5rem;
+    max-width: 400px;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.close-button {
+    margin-top: 1rem;
+    padding: 0.6rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.thankyou {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.thankyou p {
+    margin-bottom: 0.8rem;
+}
+
+@media screen and (min-width: 700px) {
+    .join-layout {
+        grid-template-columns: 1.5fr 1fr;
+        align-items: start;
+    }
+
+    .form-section,
+    .levels-section {
+        padding: 1.5rem;
+    }
+
+
+    #menu-button {
+        display: none;
+    }
+
+    #navigation {
+        display: block;
+        background-color: transparent;
+    }
+
+     #navigation ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+

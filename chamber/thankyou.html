@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    `<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of commerce </title>
+    <title>Thank You  Madagascar Chamber of Commerce</title>
 
     <meta name="author" content="Jean Herve">
-    <meta name="description" content="This is the home page of the chamber of commerce that will help and guide you to know more about it.">
-
-    <meta property="og:title" content="chamber's homepage">
-    <meta property="og:description" content="This is the home page of the chamber of commerce that will help and guide you to know more about it.">
-    <meta property="og:image" content="https://diegoherve.github.io/wdd231/chamber/images/chamber-logo">
-    <meta property="og:url" content="https://diegoherve.github.io/wdd231/chamber/directory.html">
-    <meta property="og:type" content="website">
+    <meta name="description" content="Thank you for joining the Madagascar Chamber of Commerce.">
 
     <link rel="icon" href="images/favicon.svg">
 
@@ -22,10 +16,11 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/lagrer.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/chamber.css">
-    <script src="scripts/chamberhome.js" defer></script>
-    
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="scripts/thankyou.js" defer></script>
 </head>
 <body>
     <header>
@@ -52,73 +47,26 @@
             </ul>
         </nav>
     </header>
+
     <main>
+        <h1>Thank You!</h1>
 
-        <section class="hero">
-    <img src="images/hero.png" alt="Panoramic view of Antananarivo, Madagascar">
+        <section class="thankyou">
+            <h2>Your application was received.</h2>
+            <p>Thank you for applying to the Madagascar Chamber of Commerce.</p>
 
-    <div class="hero-content">
-        <h1>Stronger Businesses, A Brighter Madagascar</h1>
-        <p>
-            Supporting our members, connecting opportunities,
-            and building a prosperous business community.
-        </p>
-        <a href="join.html" class="join-button">Join the Chamber</a>
-    </div>
-</section>
-
-<section class="events">
-    <h2>Current Events</h2>
-
-    <article class="event-card">
-        <h3>Madagascar Business Networking Night</h3>
-        <p>
-            Meet local entrepreneurs and business owners,
-            exchange ideas, and discover new opportunities.
-        </p>
-        <p><strong>Date:</strong> October 10, 2026</p>
-    </article>
-
-    <article class="event-card">
-        <h3>Small Business Growth Workshop</h3>
-        <p>
-            Learn practical strategies to improve your business,
-            reach new customers, and grow your network.
-        </p>
-        <p><strong>Date:</strong> October 17, 2026</p>
-    </article>
-</section>
-
-<section class="weather">
-    <h2>Weather</h2>
-
-    <div class="current-weather">
-        <h3>Current Weather</h3>
-        <div id="weather-current">
-            <p>Loading weather...</p>
-        </div>
-    </div>
-
-    <div class="forecast">
-        <h3>3-Day Forecast</h3>
-        <div id="weather-forecast">
-            <p>Loading forecast...</p>
-        </div>
-    </div>
-</section>
-
-<section class="spotlights">
-    <h2>Business Spotlights</h2>
-
-    <div id="spotlight-container">
-        <p>Loading business spotlights...</p>
-    </div>
-</section>
-
+            <h2>Your Information</h2>
+            <p><strong>First Name:</strong> <span id="first-name"></span></p>
+            <p><strong>Last Name:</strong> <span id="last-name"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Mobile Phone:</strong> <span id="phone"></span></p>
+            <p><strong>Business / Organization:</strong> <span id="organization"></span></p>
+            <p><strong>Date and Time:</strong> <span id="timestamp"></span></p>
+        </section>
     </main>
+
     <footer>
         <div class="footer-content">
-
             <div class="footer-contact">
                 <h2>Madagascar Chamber of Commerce</h2>
                 <p>23 rue, RABESAHALA Analakely</p>
@@ -131,7 +79,7 @@
                 <a href="https://www.facebook.com">
                     <img src="images/facebook.svg" alt="facebook logo">
                 </a>
-                <a href="https://www.linkedin.com/" >
+                <a href="https://www.linkedin.com/">
                     <img src="images/linkedin.svg" alt="linkedin logo">
                 </a>
                 <a href="https://github.com/DiegoHerve/wdd231">
@@ -144,10 +92,7 @@
                 <p>Jean Herve | WDD 231</p>
                 <p>Last Modification: <span id="last-modified"></span></p>
             </div>
-
         </div>
-
     </footer>
-    
 </body>
 </html>
