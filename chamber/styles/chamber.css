@@ -16,6 +16,54 @@
     --body-font: "Open Sans", sans-serif;
 }
 
+
+#menu-button {
+    border: none;
+    background: transparent;
+    color: var(--white);
+    font-size: 2rem;
+    padding: 0.25rem 0.5rem;
+}
+
+#navigation {
+    display: none;
+    background-color: #14384e;
+
+}
+
+#navigation.open {
+    display: block;
+}
+
+#navigation ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#navigation a {
+    display: block;
+    color: var(--white);
+    padding: 0.9rem 1rem;
+    text-align: center;
+    font-weight: 600;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    
+}
+
+#navigation a:hover,
+#navigation a.active {
+    background-color: var(--secondary-color);
+    color: red;
+}
+
+.no-bullets{
+    list-style-type: none;
+}
+
+.site-title p{
+    font-size: 35px;
+}
+
 body {
     font-family: var(--body-font);
     color: var(--text-color);
@@ -151,7 +199,7 @@ footer {
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
-    display: grid;
+    display: flex;
     gap: 1.5rem;
 }
 
@@ -173,6 +221,11 @@ footer {
 .social-links a {
     color: var(--white);
     font-weight: 600;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
 }
 
 .social-links a:hover {

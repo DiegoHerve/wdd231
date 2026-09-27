@@ -1,3 +1,16 @@
+const menuButton = document.querySelector ("#menu-button");
+const navigation  = document.querySelector("#navigation");
+
+menuButton.addEventListener("click", () =>{
+    navigation.classList.toggle("open");
+});
+
+
+document.querySelector("#current-year").textContent = new Date().getFullYear();
+
+document.querySelector("#last-modified").textContent = document.lastModified;
+
+
 async function getSpotlights() {
     try {
         const response = await fetch("data/members.json");
