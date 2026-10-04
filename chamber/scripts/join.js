@@ -27,3 +27,4 @@ closeButtons.forEach(button => {
         button.parentElement.close();
     });
 });
+

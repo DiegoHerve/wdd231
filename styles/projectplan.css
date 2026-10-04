@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: skyblue;
+    text-align: center;
+    height: 90px;
+}
+
+
+.colorschema {
+    background-color: lightgrey;
+    
+}
+main p {
+    margin: 15px;
+}
+
+main  h2 {
+    text-align: center;
+}
+
+body p{
+    font-family: Arial, sans-serif;
+}
+
+@media screen and (max-width: 500px){
+    .media h2 {
+        text-align: center;
+
+    }
+
+    .media p{
+        text-align: center;
+
+    }
+}
+
+@media screen and (min-width: 600px){
+    
+    .media p {
+        margin-left: 50px;
+    }
+}
