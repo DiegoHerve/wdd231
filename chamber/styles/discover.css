@@ -107,4 +107,8 @@
         transform: scale(1.04);
         filter: brightness(0.85);
     }
+
+    footer {
+        justify-content: center;
+    }
 }
