@@ -3,45 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space'all Park</title>
-    <meta name="description" content="This is a page where you can see all of our activities, events and offers. This webpage is for everyone">
+    <title>Home | Space'All Park</title>
+    <meta name="description" content="Discover activities, sports, and entertainment for everyone at Space'All Park.">
     <meta name="author" content="Jean Herve">
+
+    <meta property="og:title" content="Space'All Park">
+    <meta property="og:description" content="Discover sports, leisure, and entertainment at Space'All Park.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/spaceall-park-logo.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-    <meta property="og:title" content="chamber's homepage">
-    <meta property="og:description" content="This is the home page of the chamber of commerce that will help and guide you to know more about it.">
-    <meta property="og:image" content="https://diegoherve.github.io/wdd231/chamber/images/chamber-logo">
-    <meta property="og:url" content="https://diegoherve.github.io/wdd231/chamber/directory.html">
-    <meta property="og:type" content="website">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/space-favicon.png">
-    
+    <link rel="stylesheet" href="styles/space.css">
+    <link rel="stylesheet" href="styles/spacemedia.css">
+    <script type="module" src="scripts/main.js"></script>
 </head>
 <body>
-    <header>
-        <div>
-            <img src="images/spaceall-park-logo.png" alt="spaceall-park-logo" loading="lazy">
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Space'All Park home">
+            <img src="images/spaceall-park-logo.png" alt="Space'All Park logo">
+            <span>Space'All Park</span>
+        </a>
 
-            <h1>Space'All Park</h1>
-        </div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">A</a>
-            <a href="#">B</a>
+        <button id="menu-button" type="button" aria-label="Open navigation menu"
+                aria-controls="main-navigation" aria-expanded="false">
+            <span class="menu-icon" aria-hidden="true">☰</span>
+        </button>
+
+        <nav id="main-navigation" class="main-navigation" aria-label="Main navigation">
+            <a href="project.html" aria-current="page">Home</a>
+            <a href="booking.html">Booking</a>
+            <a href="aboutus.html">About Us</a>
         </nav>
-        
-
     </header>
 
     <main>
+        <section class="welcome">
+            <h1>Welcome to Space'All Park</h1>
+            <p class="welcome-subtitle">Leisure &amp; Entertainment Center</p>
+            <p>Discover what you can enjoy at Space'All Park.</p>
+        </section>
 
+        <section class="activities-section" aria-label="Our activities">
+            <article class="activity-row">
+                <img src="images/swimming.jpeg" alt="Swimming pool" loading="lazy" width="345" height="275">
+                <div class="activity-content">
+                    <h2>Large aquatic center</h2>
+                    <p class="activity-tagline">Relaxation · Family fun · Refreshment</p>
+                    <p>Dive into relaxation and enjoy a refreshing swimming experience at Space'All Park.</p>
+                    <p>Whether you want to cool off on a sunny day, spend quality time with family, or enjoy a relaxing swim with friends, our pool is a great place to unwind and have fun.</p>
+                    <h3>What you can do</h3>
+                    <ul>
+                        <li>Enjoy a refreshing swim.</li>
+                        <li>Spend quality time with family and friends.</li>
+                        <li>Relax poolside and soak up the sunshine.</li>
+                        <li>Organise group outings and poolside celebrations.</li>
+                    </ul>
+                    <a class="explore-link" href="https://wetnwildtoronto.com/">EXPLORE</a>
+                </div>
+            </article>
+
+            <article class="activity-row activity-row-reverse">
+                <img src="images/mini-pitch-soccer.jpeg" alt="Mini soccer pitch" loading="lazy" width="345" height="275">
+                <div class="activity-content">
+                    <h2>Mini soccer pitch</h2>
+                    <p class="activity-tagline">Teamwork · Energy · Competition</p>
+                    <p>Bring your team together on the pitch! Space'All Park offers a place for football enthusiasts to enjoy the beautiful game, improve their skills, and compete in a friendly sporting atmosphere.</p>
+                    <h3>What you can do</h3>
+                    <ul>
+                        <li>Book a pitch for friendly football matches.</li>
+                        <li>Organise games with friends and colleagues.</li>
+                        <li>Arrange team-building activities.</li>
+                        <li>Host small tournaments and sporting events.</li>
+                        <li>Practise passing, shooting, and ball control.</li>
+                    </ul>
+                    <a class="explore-link" href="https://ussoccerfoundation.org/programs/safe-places-to-play/">EXPLORE</a>
+                </div>
+            </article>
+
+            <article class="activity-row">
+                <img src="images/basketball-pitch.jpeg" alt="Mini basketball court" loading="lazy" width="345" height="275">
+                <div class="activity-content">
+                    <h2>Mini basketball court</h2>
+                    <p class="activity-tagline">Energy · Skills · Team spirit</p>
+                    <p>Shoot, dribble, pass, and score! Our basketball court provides a space for players of different skill levels to stay active, develop their abilities, and enjoy games with friends.</p>
+                    <h3>What you can do</h3>
+                    <ul>
+                        <li>Play casual basketball games.</li>
+                        <li>Organise one-on-one challenges.</li>
+                        <li>Practise shooting, dribbling, and passing.</li>
+                        <li>Arrange team matches and friendly competitions.</li>
+                        <li>Enjoy basketball sessions with friends or colleagues.</li>
+                    </ul>
+                    <a class="explore-link" href="https://www.snapsports.com/residential-basketball-courts/">EXPLORE</a>
+                </div>
+            </article>
+
+            <article class="activity-row activity-row-reverse">
+                <img src="images/billiard table.jpeg" alt="Billiards table" loading="lazy" width="345" height="275">
+                <div class="activity-content">
+                    <h2>Billiards</h2>
+                    <p class="activity-tagline">Focus · Precision · Friendly competition</p>
+                    <p>Challenge your friends to a game of billiards and put your aiming skills to the test. Whether you're a beginner or an experienced player, it's a great activity for friendly competition and enjoyable moments.</p>
+                    <h3>What you can do</h3>
+                    <ul>
+                        <li>Play casual games with friends.</li>
+                        <li>Challenge others to friendly matches.</li>
+                        <li>Practise your aiming and ball-control skills.</li>
+                        <li>Organise mini-tournaments and group competitions.</li>
+                    </ul>
+                    <a class="explore-link" href="https://tbcpool.org/">EXPLORE</a>
+                </div>
+            </article>
+
+            <article class="activity-row">
+                <img src="images/karaoke.jpeg" alt="Karaoke microphone" loading="lazy" width="345" height="275">
+                <div class="activity-content">
+                    <h2>Karaoke</h2>
+                    <p class="activity-tagline">Music · Laughter · Memories</p>
+                    <p>Take the microphone, choose your favourite songs, and let the fun begin! Our karaoke space is designed for music lovers who want to sing, laugh, and create unforgettable moments with friends, family, or colleagues.</p>
+                    <h3>What you can do</h3>
+                    <ul>
+                        <li>Sing your favourite songs.</li>
+                        <li>Enjoy duets and group performances.</li>
+                        <li>Host karaoke challenges and singing competitions.</li>
+                        <li>Celebrate birthdays and special occasions with music.</li>
+                    </ul>
+                    <a class="explore-link" href="https://www.mauritiuskaraoke.com/">EXPLORE</a>
+                </div>
+            </article>
+        </section>
     </main>
 
-    <footer>
-
+    <footer class="site-footer">
+        <div>
+            <h2>Space'All Park</h2>
+            <p>Address: Rue Rabezavana II Nanisana</p>
+            <p>Antananarivo - Madagascar</p>
+        </div>
+        <div>
+            <p>Follow us:</p>
+            <nav class="social-links" aria-label="Social media">
+                <a href="https://www.linkedin.com/">
+                    <img src="images/linkedin.svg" alt="linkedin logo">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img src="images/facebook.svg" alt="facebook logo">
+                </a>
+                <a href="https://github.com/DiegoHerve/wdd231">
+                    <img src="images/github.svg" alt="">
+                </a>
+            </nav>
+        </div>
+        <p><a href="attributions.html">Attributions</a></p>
     </footer>
 </body>
 </html>

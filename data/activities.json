@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Swimming",
+    "type": "Aquatic",
+    "place": "Swimming pool",
+    "duration": "Flexible",
+    "description": "Enjoy a refreshing swim and spend time with family."
+  },
+  {
+    "name": "Mini soccer",
+    "type": "Team sport",
+    "place": "Mini soccer pitch",
+    "duration": "60 minutes",
+    "description": "Play friendly football matches with your team."
+  },
+  {
+    "name": "Basketball",
+    "type": "Team sport",
+    "place": "Basketball court",
+    "duration": "60 minutes",
+    "description": "Practise shooting, dribbling, and passing."
+  },
+  {
+    "name": "Billiards",
+    "type": "Indoor game",
+    "place": "Games area",
+    "duration": "30 minutes",
+    "description": "Challenge friends to a game of precision."
+  },
+  {
+    "name": "Karaoke",
+    "type": "Music",
+    "place": "Karaoke room",
+    "duration": "Flexible",
+    "description": "Sing your favourite songs with friends."
+  },
+  {
+    "name": "Family swim",
+    "type": "Aquatic",
+    "place": "Swimming pool",
+    "duration": "45 minutes",
+    "description": "Enjoy a relaxed family swimming session."
+  },
+  {
+    "name": "Friendly football match",
+    "type": "Team sport",
+    "place": "Mini soccer pitch",
+    "duration": "60 minutes",
+    "description": "Arrange a friendly game with friends."
+  },
+  {
+    "name": "Free-throw challenge",
+    "type": "Basketball",
+    "place": "Basketball court",
+    "duration": "20 minutes",
+    "description": "Test your basketball shooting accuracy."
+  },
+  {
+    "name": "Billiards challenge",
+    "type": "Indoor game",
+    "place": "Games area",
+    "duration": "30 minutes",
+    "description": "Try a friendly mini competition."
+  },
+  {
+    "name": "Karaoke duet",
+    "type": "Music",
+    "place": "Karaoke room",
+    "duration": "One song",
+    "description": "Perform a duet with someone."
+  },
+  {
+    "name": "Team-building game",
+    "type": "Group activity",
+    "place": "Sports area",
+    "duration": "60 minutes",
+    "description": "Bring colleagues together through play."
+  },
+  {
+    "name": "Poolside break",
+    "type": "Leisure",
+    "place": "Poolside",
+    "duration": "Flexible",
+    "description": "Take a break and relax by the pool."
+  },
+  {
+    "name": "Mini tournament",
+    "type": "Competition",
+    "place": "Mini soccer pitch",
+    "duration": "Varies",
+    "description": "Organise a small tournament."
+  },
+  {
+    "name": "Basketball one-on-one",
+    "type": "Basketball",
+    "place": "Basketball court",
+    "duration": "20 minutes",
+    "description": "Challenge another player one-on-one."
+  },
+  {
+    "name": "Group singing",
+    "type": "Music",
+    "place": "Karaoke room",
+    "duration": "Flexible",
+    "description": "Share a group singing performance."
+  }
+]

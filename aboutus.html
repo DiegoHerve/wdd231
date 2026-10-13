@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Space'All Park</title>
+    <meta name="description" content="Learn about Space'All Park and explore our leisure and sports activities.">
+    <meta name="author" content="Jean Herve">
+    <meta property="og:title" content="About Us | Space'All Park">
+    <meta property="og:description" content="Learn about Space'All Park and explore our leisure and sports activities.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/spaceall-park-logo.png">
+    <link rel="icon" href="images/space-favicon.png">
+    <link rel="stylesheet" href="styles/space.css">
+    <link rel="stylesheet" href="styles/spacemedia.css">
+    <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Space'All Park home">
+            <img src="images/spaceall-park-logo.png" alt="Space'All Park logo">
+            <span>Space'All Park</span>
+        </a>
+        <button id="menu-button" type="button" aria-label="Open navigation menu"
+                aria-controls="main-navigation" aria-expanded="false">
+            <span class="menu-icon" aria-hidden="true">☰</span>
+        </button>
+        <nav id="main-navigation" class="main-navigation" aria-label="Main navigation">
+            <a href="project.html">Home</a>
+            <a href="booking.html">Booking</a>
+            <a href="aboutus.html" aria-current="page">About Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <h1>About Space'All Park</h1>
+            <p>A place to play, relax, and spend time together.</p>
+        </section>
+
+        <section class="about-copy">
+            <h2>Our purpose</h2>
+            <p>Space'All Park brings leisure, recreation, and entertainment together in one welcoming place. Visitors can enjoy sports, indoor games, music, and time with family or friends.</p>
+            <h2>Explore activities</h2>
+            <p>Here are 15 activities. Select “More details” to learn about an activity, or save your favourites in this browser.</p>
+        </section>
+
+        <p id="load-message" class="status-message" role="status">Loading activities...</p>
+        <section id="activity-list" class="activity-list" aria-label="Activities"></section>
+
+        <dialog id="activity-dialog" aria-labelledby="dialog-title">
+            <h2 id="dialog-title">Activity details</h2>
+            <div id="dialog-content"></div>
+            <button id="close-dialog" type="button">Close</button>
+        </dialog>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <h2>Space'All Park</h2>
+            <p>Address: Rue Rabezavana II Nanisana</p>
+            <p>Antananarivo - Madagascar</p>
+        </div>
+       <div>
+            <p>Follow us:</p>
+            <nav class="social-links" aria-label="Social media">
+                <a href="https://www.linkedin.com/">
+                    <img src="images/linkedin.svg" alt="linkedin logo">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img src="images/facebook.svg" alt="facebook logo">
+                </a>
+                <a href="https://github.com/DiegoHerve/wdd231">
+                    <img src="images/github.svg" alt="">
+                </a>
+            </nav>
+        </div>
+        <p><a href="attributions.html">Attributions</a></p>
+    </footer>
+</body>
+</html>

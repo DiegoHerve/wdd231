@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | Space'All Park</title>
+    <meta name="description" content="Send a booking request for activities at Space'All Park.">
+    <meta name="author" content="Jean Herve">
+    <meta property="og:title" content="Booking | Space'All Park">
+    <meta property="og:description" content="Send a booking request for activities at Space'All Park.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/spaceall-park-logo.png">
+    <link rel="icon" href="images/space-favicon.png">
+    <link rel="stylesheet" href="styles/space.css">
+    <link rel="stylesheet" href="styles/spacemedia.css">
+    <link rel="stylesheet" href="styles/Booking.css">
+    <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Space'All Park home">
+            <img src="images/spaceall-park-logo.png" alt="Space'All Park logo">
+            <span>Space'All Park</span>
+        </a>
+        <button id="menu-button" type="button" aria-label="Open navigation menu"
+                aria-controls="main-navigation" aria-expanded="false">
+            <span class="menu-icon" aria-hidden="true">☰</span>
+        </button>
+        <nav id="main-navigation" class="main-navigation" aria-label="Main navigation">
+            <a href="project.html">Home</a>
+            <a href="booking.html" aria-current="page">Booking</a>
+            <a href="aboutus.html">About Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <h1>Book an Activity</h1>
+            <p>Complete this form to send a booking request.</p>
+        </section>
+
+        <form class="booking-form" action="form-action.html" method="get">
+            <label for="visitor-name">Full name</label>
+            <input type="text" id="visitor-name" name="name" autocomplete="name" required>
+
+            <label for="visitor-email">Email address</label>
+            <input type="email" id="visitor-email" name="email" autocomplete="email" required>
+
+            <label for="activity">Choose an activity</label>
+            <select id="activity" name="activity" required>
+                <option value="">Choose an activity</option>
+                <option value="Swimming">Swimming</option>
+                <option value="Mini soccer">Mini soccer</option>
+                <option value="Basketball">Basketball</option>
+                <option value="Billiards">Billiards</option>
+                <option value="Karaoke">Karaoke</option>
+            </select>
+
+            <label for="booking-date">Preferred date</label>
+            <input type="date" id="booking-date" name="date" required>
+
+            <label for="message">Additional details (optional)</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Send booking request</button>
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <h2>Space'All Park</h2>
+            <p>Address: Rue Rabezavana II Nanisana</p>
+            <p>Antananarivo - Madagascar</p>
+        </div>
+        <div>
+            <p>Follow us:</p>
+            <nav class="social-links" aria-label="Social media">
+                <a href="https://www.linkedin.com/">
+                    <img src="images/linkedin.svg" alt="linkedin logo">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img src="images/facebook.svg" alt="facebook logo">
+                </a>
+                <a href="https://github.com/DiegoHerve/wdd231">
+                    <img src="images/github.svg" alt="">
+                </a>
+            </nav>
+        </div>
+        <p><a href="attributions.html">Attributions</a></p>
+    </footer>
+</body>
+</html>
